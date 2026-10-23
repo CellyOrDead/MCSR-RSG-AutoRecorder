@@ -10,6 +10,7 @@ Requires JDK 17 and Gradle 8 or newer.
 gradle :desktop:test :desktop:build
 gradle :desktop:run
 ```
+or just install the realease pre comp
 
 OBS WebSocket v5 is enabled from **Tools → WebSocket Server Settings** in OBS. The app remembers the last address and port, protects the password with Windows DPAPI for the current Windows account, and reconnects automatically on the next launch. **Auto preencher IP** checks addresses on this computer; for OBS on another computer, use **Colar QR do OBS**.
 
