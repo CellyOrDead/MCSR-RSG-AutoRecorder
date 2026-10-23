@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.autorecorder.SourceRecordServiceTest" tests="5" skipped="0" failures="2" errors="0" timestamp="2026-10-23T12:22:42.568Z" hostname="DEAD" time="20.371">
+  <properties/>
+  <testcase name="checksTheRegisteredSourceRecordVendorWithoutTouchingRealSources()" classname="dev.autorecorder.SourceRecordServiceTest" time="0.005"/>
+  <testcase name="stoppingGameplayDoesNotStopTheSeparateWallFilter()" classname="dev.autorecorder.SourceRecordServiceTest" time="10.181">
+    <failure message="dev.autorecorder.recording.SourceRecordService$StartFailure: Could not verify that OBS started wall recording. File: C:\Users\brand\AppData\Local\Temp\junit-15153566191179929484\wall\MCSR_WALL_a0f86cc6203b47b4afd9d544d7007b65.mkv" type="dev.autorecorder.recording.SourceRecordService$StartFailure">dev.autorecorder.recording.SourceRecordService$StartFailure: Could not verify that OBS started wall recording. File: C:\Users\brand\AppData\Local\Temp\junit-15153566191179929484\wall\MCSR_WALL_a0f86cc6203b47b4afd9d544d7007b65.mkv
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:131)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:52)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:47)
+	at dev.autorecorder.SourceRecordServiceTest.stoppingGameplayDoesNotStopTheSeparateWallFilter(SourceRecordServiceTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.IOException: OBS accepted the start request, but the video file did not keep growing; check that the configured Minecraft source is visible and active
+	at dev.autorecorder.recording.SourceRecordService.awaitStarted(SourceRecordService.java:201)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:126)
+	... 6 more
+</failure>
+  </testcase>
+  <testcase name="refusesAnOutputDirectoryOutsideTheConfiguredRoot()" classname="dev.autorecorder.SourceRecordServiceTest" time="0.003"/>
+  <testcase name="vendorRejectionIsReportedAsUnverifiedAndCleanupIsRequested()" classname="dev.autorecorder.SourceRecordServiceTest" time="0.005"/>
+  <testcase name="startsAndFinalizesOnlyItsSourceRecordOutput()" classname="dev.autorecorder.SourceRecordServiceTest" time="10.176">
+    <failure message="dev.autorecorder.recording.SourceRecordService$StartFailure: Could not verify that OBS started gameplay recording. File: C:\Users\brand\AppData\Local\Temp\junit-18308431373642649234\gameplay\MCSR_GAMEPLAY_cecfe34107a44d8e88838e2c557c077d.mkv" type="dev.autorecorder.recording.SourceRecordService$StartFailure">dev.autorecorder.recording.SourceRecordService$StartFailure: Could not verify that OBS started gameplay recording. File: C:\Users\brand\AppData\Local\Temp\junit-18308431373642649234\gameplay\MCSR_GAMEPLAY_cecfe34107a44d8e88838e2c557c077d.mkv
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:131)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:52)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:47)
+	at dev.autorecorder.SourceRecordServiceTest.startsAndFinalizesOnlyItsSourceRecordOutput(SourceRecordServiceTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.IOException: OBS accepted the start request, but the video file did not keep growing; check that the configured Minecraft source is visible and active
+	at dev.autorecorder.recording.SourceRecordService.awaitStarted(SourceRecordService.java:201)
+	at dev.autorecorder.recording.SourceRecordService.start(SourceRecordService.java:126)
+	... 6 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.autorecorder.ObsQrParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-23T12:22:42.527Z" hostname="DEAD" time="0.003">
+  <properties/>
+  <testcase name="extractsHostPortAndPassword()" classname="dev.autorecorder.ObsQrParserTest" time="0.001"/>
+  <testcase name="rejectsSecureOrWrongSchemeWithoutEchoingSecret()" classname="dev.autorecorder.ObsQrParserTest" time="0.0"/>
+  <testcase name="supportsQrWithoutAuthentication()" classname="dev.autorecorder.ObsQrParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

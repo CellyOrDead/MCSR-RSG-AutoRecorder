@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.autorecorder.DatabaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-23T12:22:41.772Z" hostname="DEAD" time="0.633">
+  <properties/>
+  <testcase name="retentionSettingsSurviveDatabaseReopen()" classname="dev.autorecorder.DatabaseTest" time="0.461"/>
+  <testcase name="obsConnectionAddressSurvivesDatabaseReopen()" classname="dev.autorecorder.DatabaseTest" time="0.076"/>
+  <testcase name="recorderSettingsAndRecordingMetadataSurviveDatabaseReopen()" classname="dev.autorecorder.DatabaseTest" time="0.094"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
